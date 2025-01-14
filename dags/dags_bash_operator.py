@@ -14,7 +14,7 @@ with DAG(
 ) as dag:
     bash_t1 = BashOperator(
         task_id="bash_t1",
-        bash_command="echo 'whoami'",
+        bash_command="echo whoami",
     )
 
     bash_t2 = BashOperator(
